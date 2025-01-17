@@ -186,6 +186,7 @@ body {
 .service-3 .text-container {
     flex: 1;
     max-width: 600px;
+    margin-bottom: 1.5rem;
 }
 
 .service-3 .text-container p {
@@ -204,11 +205,52 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Service-4 Section */
+.service-4 {
+    padding: 2rem 0;
+    background: #f9f9f9; /* Sem fundo escuro, como solicitado */
+    text-align: center;
+}
+
+.service-4 h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-4-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    margin-top: 1.5rem;
+}
+
+.service-4 .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.service-4 .text-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+.service-4 .text-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Manter o texto escuro */
+}
+
 .btn-primary {
+    display: flex;
+    align-items: center;  /* Alinha o ícone e o texto verticalmente */
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
     position: relative;
     z-index: 2; 
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
     width: 100%;
     text-align: center;
     background: #367FB9;
@@ -217,6 +259,11 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    gap: 0.5rem;
+}
+
+.btn-primary i {
+    font-size: 1.2rem;
 }
 
 .btn-primary:hover {
@@ -333,6 +380,20 @@ body {
     .service-3 .text-container {
         max-width: 100%;
     }
+
+    .service-4 .service-4-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-4 .image-container img {
+        max-width: 80%; /* Make image slightly smaller on medium screens */
+    }
+
+    .service-4 .text-container {
+        max-width: 100%;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -371,5 +432,26 @@ body {
 
     .service-3 .image-container img {
         max-width: 100%; /* Ensure the image takes full width on small screens */
+    }
+
+    .service-4 .service-4-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-4 .image-container img {
+        max-width: 80%; /* Make image slightly smaller on medium screens */
+    }
+
+    .service-4 .text-container {
+        max-width: 100%;
+    }
+
+    .service-4 h1 {
+        font-size: 1.5rem;
+    }
+
+    .service-4 .text-container p {
+        font-size: 0.9rem;
     }
 }
