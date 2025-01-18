@@ -2,7 +2,7 @@ window.onload = function() {
     setTimeout(() => {
         const preloader = document.getElementById('preloader');
         preloader.style.display = 'none';
-    }, 3000);
+    }, 1000);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
