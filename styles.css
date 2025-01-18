@@ -121,7 +121,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Flexbox Layout */
 .service-1-content {
     display: flex;
     align-items: center;
@@ -131,7 +130,7 @@ body {
     margin-top: 1.5rem;
 }
 
-.image-container img {
+.service-1 .image-container img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -140,12 +139,12 @@ body {
     width: 100%; /* Ensure the image takes full width inside container */
 }
 
-.text-container {
+.service-1 .text-container {
     flex: 1;
     max-width: 600px;
 }
 
-.text-container p {
+.service-1 .text-container p {
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
@@ -374,55 +373,6 @@ body {
 .btn-primary:hover {
     background: #0056b3;
 }
-
-/* About Section */
-.about {
-    padding: 2rem 0;
-    background: #f4f4f4;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    font-size: 1rem;
-}
-
-/* Services Section */
-.services {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.service-list {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.service-item {
-    background: #fff;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.service-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
 /* Footer */
 #main-footer {
     background: #333;
@@ -460,42 +410,11 @@ body {
         width: 100%;
     }
 
-    .service-1-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .image-container img {
         max-width: 80%; /* Make image slightly smaller on medium screens */
     }
 
     .text-container {
-        max-width: 100%;
-    }
-
-    .service-3 .service-3-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .service-3 .image-container img {
-        max-width: 80%; /* Make image slightly smaller on medium screens */
-    }
-
-    .service-3 .text-container {
-        max-width: 100%;
-    }
-
-    .service-4 .service-4-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .service-4 .image-container img {
-        max-width: 80%; /* Make image slightly smaller on medium screens */
-    }
-
-    .service-4 .text-container {
         max-width: 100%;
     }
 }
