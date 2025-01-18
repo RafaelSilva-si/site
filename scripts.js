@@ -1,3 +1,10 @@
+window.onload = function() {
+    setTimeout(() => {
+        const preloader = document.getElementById('preloader');
+        preloader.style.display = 'none';
+    }, 3000);
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
     const slides = Array.from(track.children);
