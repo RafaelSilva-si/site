@@ -357,7 +357,7 @@ video {
 }
 
 .carousel-slide img {
-    max-width: 90%;
+    max-width: 40%;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -626,6 +626,10 @@ video {
     .location .text-container h3 {
         font-size: 16px;
     }
+
+    .carousel-slide img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -693,6 +697,10 @@ video {
 
     .location .text-container h3 {
         font-size: 14px;
+    }
+
+    .carousel-slide img {
+        max-width: 100%;
     }
 }
   
