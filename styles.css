@@ -405,12 +405,11 @@ video {
     margin-bottom: 1.5rem;
 }
 
+.about-us img{
+    max-width: 100%;
+}
 .about-us-content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     gap: 2rem;
-    flex-direction: column; /* Empilhando o conteúdo em telas pequenas */
     margin-top: 1.5rem;
 }
 
